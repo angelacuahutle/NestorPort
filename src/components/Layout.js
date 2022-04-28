@@ -14,10 +14,10 @@ export default function Layout({children, header, hideNavigation, next}) {
     <nav className="row pt-5 justify-content-between align-items-center">
       <div className="col">
         <Link to={'/'} className={'  pl-0 text-decoration-none'}
-              style={{fontWeight: 400}}>
-          samuele<br/>
-          sanguineti
-        </Link>
+              style={{fontWeight: 100}}>
+          nestor<br/>
+          osuna       
+           </Link>
       </div>
       {next && next && <div className="col-auto">
         <Link to={next} className={'text-decoration-none'}>next</Link>
@@ -37,13 +37,13 @@ export default function Layout({children, header, hideNavigation, next}) {
 
           <div className="col-12">
             <a className="font-weight-bold small"
-               href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
+               href="osunanestor@hotmail.com">osunanestor@hotmail.com</a>
           </div>
           <div className="col-4 py-1">
-            <a href="https://www.instagram.com/samusang/">Instagram</a><br/>
+            <a href="https://www.instagram.com/nestorozuna/">Instagram</a><br/>
           </div>
           <div className="col-4 py-1">
-            <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/">Linkedin</a>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=nestor%20osuna&origin=RICH_QUERY_SUGGESTION&position=0&searchId=c852b55d-cb19-4a18-93c4-5385011d176e&sid=m)X">Linkedin</a>
           </div>
         </div>
       </div>

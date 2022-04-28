@@ -2,11 +2,11 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
-import Seo from '../components/Seo';
+import Nod from '../components/nod';
 
 export default function SanBenedetto({data: {images}}) {
   return <Layout header={'Thé San Benedetto'} next={"/vetro/"}>
-    <Seo title={"Thé San Benedetto"}/>
+    <Nod title={"Thé San Benedetto"}/>
 
     <p>
       In the San Benedetto project, is enclosed all the work behind the creation

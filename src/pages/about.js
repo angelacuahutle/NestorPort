@@ -6,79 +6,53 @@ import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 export default function Home({data: {profile}}) {
 
   return <Layout
-      header={<h1 className={'h3'} style={{lineHeight: 1}}>Hi, my name is<br/>Samuele
-        Sanguineti</h1>}>
+      header={<h1 className={'h3'} style={{lineHeight: 1}}></h1>}>
     <div className="row">
       <div className="col-12 col-lg-8 border-top border-dark ">
-        <p className={' pt-4'}>I was born and raised in a town called
-          Rapallo, that overlooks the Ligurian Sea to which I own a lot of my
-          personal growth.
-          After graduating as an graphic design, I decided to deepen my course
-          of study following my great passion for graphics at NABA in Milan
-          where I got my first <b>degree in Graphic Design and Art Direction</b>.
-          I was
-          then attracted by the communication and graphics that focused on
-          fashion design, so I continued my course of study enrolling in a
-          Master’s in <b>Design for the Fashion System at Politecnico di
-            Milano</b>,
-          which I am currently attending.
-          I have always found interesting the link that stands between
-          communication and fashion; I am firmly convinced that one could not
-          exist without the other. This is why I wish that one day, the
-          combination of fashion and communication, could became what my job
-          will be based on.
+        <p className={'pt-4'}>Nació en Sinaloa. En el 2007 se fue a vivir a Paris, una ciudad que ama porque ahi se llena de energía e inspiración. Se fue a aprender un nuevo idioma y a descrubrir su
+         cultura pero también con el firme propósito de colaborar en la industria de la moda. "En Paris me siento en mi
+         habitat natural, el universo de la moda el cual llevo desarrollando desde hace 15 años" comenta Nestor Osuna.
+
+        Nestor estudió diseño de moda en el Istituto Marangoni en Milán. Consecuentemente trabajó en dos reconocidas
+        casas de moda, mila SchÖN, Alessandro dell ́ AcquA & Versus, de donde obtuvó un legado de conocimiento para
+        desarrollar una colección, un tiempo de mucho enriquecimiento intelectual que lo llevaron a crear su propia
+        marca en México, en donde ahora su nombre es reconocido. Ha participado en diversos shows de la semana de la
+        moda en México y a lo largo de su trayectoria también ha incursionado en diversos campos del mundo de la moda.
+        "Esta es mi pasión, y esta en todo: make up, hairdressing, photo shooting, editoriales y styling. En otras
+        palabras, me encanta este mundo y nada más"
+
+        "Nestor Osuna visualiza la moda como un complemento en la vida, es una simple seducción, una ligera
+        sofisticación donde la rutina se vuelve simplemente encantadora" - Harper ́s Bazzar, Mexico
+
+        "Cuando diseño, no tengo límites. Concibo una colección como un registro lógico dentro de una fotografía
+        estricta y definida. La libertad de creación y los contrastes que puede haber en una colección no son
+        necesariamente antagonistas sino que se refuerzan en el proceso de la elaboración. Estamos en la búsqueda
+        constante de un balance crítico. Una colección encuentra este punto y crea un estilo" puntualilza.
         </p>
-        <h2 className={'h5'}>Education</h2>
-        <ul className="list-unstyled">
-          <li><b>Master Degree</b>, Design for the Fashion System, Politecnico
-            di Milano, 2019
-          </li>
-          <li><b>Bachelor Degree</b>, Graphic desing e art direction, NABA, 2018
-          </li>
-          <li><b>Diploma</b>, technical Institute, Graphic design 2010-2015</li>
-        </ul>
 
       </div>
       <div className="col-12 col-lg-4 border-dark border-left " >
-        <p className={'small'}>Milano / Italia <br/>
-          for information and collaboration:<br/>
+        <p className={'small'}>CDMX / Mexico <br/>
+          Para más información:<br/>
           <a className="font-weight-bold"
-             href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
+             href="mailto:osunanestor@hotmail.com">osunanestor@hotmail.com</a>
         </p>
         <p className={'small'}>
-          <a href="https://www.instagram.com/samusang/">@samusang</a><br/>
-          <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/">Linkedin</a>
+          <a href="https://www.instagram.com/nestorosuna_">@nestorosuna_</a><br/>
         </p>
       </div>
       <div className="col-12 col-md-8 pt-5">
         <div className="w-50">
-          <GatsbyImage alt={'Samuele Sanguineti resume pic'}
+          <GatsbyImage alt={'Nestor'}
                        image={getImage(profile)}/>
         </div>
       </div>
 
       <div className="col-12 col-md border-dark border-left h-100">
-        <p className=" "><a
-            href={'/samuelesanguineti_cv_eng.pdf'} download>CV english</a>
+        <p className=" font-weight-bold"><a
+            href={'/NestorOsuna_Pres2017_LinkstoPress.pdf'} download>Press</a>
           <br/>
-          <a
-              href={'/samuelesanguineti_cv_it.pdf'} download>CV italiano</a>
         </p>
-        <p className="font-weight-bold">Additional information about me:</p>
-        <p className={'font-weight-bold'}>+ Software</p>
-        <ul className="list-unstyled">
-          <li>Adobe Photoshop</li>
-          <li>Adobe Illustrator</li>
-          <li>Adobe Indesign</li>
-          <li>Adobe After Effects</li>
-          <li>Adobe Premiere</li>
-          <li>Word</li>
-          <li>Power Point</li>
-          <li>Excel</li>
-          <li>Keynote</li>
-          <li>Figma</li>
-          <li>Cinema 4d basics</li>
-        </ul>
       </div>
 
     </div>
@@ -86,7 +60,7 @@ export default function Home({data: {profile}}) {
 }
 
 export const query = graphql`{
-  profile: file(relativePath: {eq: "samuelesanguineti.jpg"}) {
+  profile: file(relativePath: {eq: ""}) {
       id
       relativePath
       childImageSharp {

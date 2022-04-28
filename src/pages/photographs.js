@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
-import Seo from '../components/Seo';
+import Nod from '../components/nod';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 
 export default function SanBenedetto({data: {images, debugged}}) {
 
   return <Layout header={'Personal photo'}>
-    <Seo title={'Personal photo'}/>
+    <Nod title={'Personal photo'}/>
     <div className="row project-gallery">
       <div
           className="col-12 offset-lg-2 col-lg-3 d-flex flex-column justify-content-between">

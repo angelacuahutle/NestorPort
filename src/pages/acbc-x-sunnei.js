@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
-import Seo from '../components/Seo';
+import Nod from '../components/nod';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 
 export default function SanBenedetto({data: {images}}) {
 
   return <Layout header={'ACBCxSUNNEI'} next={"/photographs/"}>
-    <Seo title={'ACBCxSUNNEI'}/>
+    <Nod title={'ACBCxSUNNEI'}/>
     <p>The Archetypical Innovation in Sportswear workshop focuses on the
       redesign of a vintage garment, its actualization in terms of design,
       material technologies and production processes. The whole experience

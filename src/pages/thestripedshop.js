@@ -2,11 +2,11 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
-import Seo from '../components/Seo';
+import Nod from '../components/nod';
 
 export default function TheStripedShop({data: {images}}) {
   return <Layout header={'The Striped Shop'} next={'/sanbenedetto'}>
-    <Seo title={'The Striped Shop'}/>
+    <Nod title={'The Striped Shop'}/>
     <p>
       The Striped Shop is an itinerant pop-up store focused on lifestyle
       necessities and inspired by the iconic Breton shirt, featuring all its

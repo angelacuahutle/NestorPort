@@ -2,11 +2,11 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
-import Seo from '../components/Seo';
+import Nod from '../components/nod';
 
 export default function SanBenedetto({data: {images}}) {
    return <Layout header={'Vetro'} next={"/acbc-x-sunnei/"}>
-    <Seo title={'Vetro'}/>
+    <Nod title={'Vetro'}/>
     <p>Vetro is a group project about the creation of a Digital Branding
       strategy for an invented brand. We were asked to focalize on the analysis
       of the last trends and to create something that reflects the needs of the
