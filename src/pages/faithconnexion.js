@@ -17,35 +17,35 @@ export default function SanBenedetto({data: {images}}) {
     </p>
     <div className="row project-gallery" id="fc-pics-container">
       <div id="fc1">
-        <GatsbyImage image={getImage(images.nodes[1])}/>
+        <GatsbyImage image={getImage(images.nodes[4])}/>
       </div>
       <div id="fc2">
-        <GatsbyImage image={getImage(images.nodes[2])}/>
+        <GatsbyImage image={getImage(images.nodes[4])}/>
       </div>
       <div id="fc3">
-        <GatsbyImage image={getImage(images.nodes[4])}/>
+        <GatsbyImage image={getImage(images.nodes[3])}/>
       </div>
     </div>
 
     <div className="row project-gallery" id="fc-pics-container">
-      <div id="fc1">
-        <GatsbyImage image={getImage(images.nodes[3])}/>
+      <div className="col-6">
+        <GatsbyImage image={getImage(images.nodes[15])}/>
       </div>
-      <div id="fc2">
-        <GatsbyImage image={getImage(images.nodes[2])}/>
+      <div className="col-6">
+        <GatsbyImage image={getImage(images.nodes[9])}/>
       </div>
     </div>
     
     <div className="project-gallery">
       <div className="row ">
         <div className="col-4">
-          <GatsbyImage image={getImage(images.nodes[7])}/>
+          <GatsbyImage image={getImage(images.nodes[10])}/>
         </div>
         <div className="col-4">
-          <GatsbyImage image={getImage(images.nodes[6])}/>
+          <GatsbyImage image={getImage(images.nodes[11])}/>
         </div>
         <div className="col-4">
-            <GatsbyImage image={getImage(images.nodes[5])}/>
+            <GatsbyImage image={getImage(images.nodes[12])}/>
         </div>
       </div>
     </div>

@@ -6,31 +6,31 @@ import Nod from '../components/nod';
 
 export default function Buluminiscencia({data: {images}}) {
 
-  return <Layout header={'SASTREIA DESESTRUCTURADA'} next={"/golfodeltigullio/"}>
-    <Nod title={'SASTREIA DESESTRUCTURADA'}/>
+  return <Layout header={'BOLUMINISENCIA'} next={"/golfodeltigullio/"}>
+    <Nod title={'BOLUMINISENCIA'}/>
 
     <div className="row project-gallery">
       <div className="col-md-4">
         <GatsbyImage
-            image={getImage(images.nodes[5])}/>
-      </div>
+            image={getImage(images.nodes[0])}/>
+      </div>   
       <div className="col-md-4 position-relative">
-        <div className="row">        
-
-       <div className="col-md-4 position-relative">
-          <GatsbyImage
-            image={getImage(images.nodes[3])}/>
-        </div>
-        </div>
-      </div>       
-
-      <div className="col-md-4">
         <GatsbyImage
-            image={getImage(images.nodes[3])}/>
+          image={getImage(images.nodes[1])}/>
+      </div>    
+      <div className="col-md-4 position-relative">
+        <GatsbyImage
+          image={getImage(images.nodes[2])}/>
       </div>
+      
+
       <div className="col-md-4">
         <GatsbyImage
             image={getImage(images.nodes[4])}/>
+      </div>
+      <div className="col-md-4">
+        <GatsbyImage
+            image={getImage(images.nodes[6])}/>
       </div>
       <div className="col-md-4">
         <GatsbyImage
@@ -49,6 +49,8 @@ export default function Buluminiscencia({data: {images}}) {
         <GatsbyImage
             image={getImage(images.nodes[9])}/>
       </div>
+
+
       <div className="col-md-4">
         <GatsbyImage
             image={getImage(images.nodes[10])}/>
@@ -61,9 +63,18 @@ export default function Buluminiscencia({data: {images}}) {
         <GatsbyImage
             image={getImage(images.nodes[12])}/>
       </div>
+
       <div className="col-md-4">
         <GatsbyImage
-            image={getImage(images.nodes[1])}/>
+            image={getImage(images.nodes[13])}/>
+      </div>
+      <div className="col-md-4">
+        <GatsbyImage
+            image={getImage(images.nodes[13])}/>
+      </div>
+      <div className="col-md-4">
+        <GatsbyImage
+            image={getImage(images.nodes[13])}/>
       </div>
 
     </div>

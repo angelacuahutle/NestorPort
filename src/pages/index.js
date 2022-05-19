@@ -8,11 +8,11 @@ export default function Home() {
 
   const pages = [
     {
-      label: 'SASTRERIA DESESTRUCTURADA',
+      label: 'BOLUMINISENIA',
       path: '/cj/'
     },
     {
-      label: 'COLECCIÓN DESFILE MUSEO DEL CHOPO',
+      label: 'SASTREIA DESESTRUCTURADA-ONGOING',
       path: '/golfodeltigullio/'
     },
     {
