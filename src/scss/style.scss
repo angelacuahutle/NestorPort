@@ -89,7 +89,7 @@ p {
 
 #fc-pics-container {
    position: relative;
-  overflow-x: hidden;
+   overflow: hidden !important;
 }
 
 #fc1 {
