@@ -29,13 +29,25 @@ export default function SanBenedetto({data: {images}}) {
 
     <div className="row project-gallery" id="fc-pics-container">
       <div className="col-6">
-        <GatsbyImage image={getImage(images.nodes[15])}/>
+        <GatsbyImage image={getImage(images.nodes[5])}/>
       </div>
       <div className="col-6">
         <GatsbyImage image={getImage(images.nodes[9])}/>
       </div>
     </div>
-    
+
+    <div className="row project-gallery" id="fc-pics-container">
+      <div id="fc1">
+        <GatsbyImage image={getImage(images.nodes[13])}/>
+      </div>
+      <div id="fc2">
+        <GatsbyImage image={getImage(images.nodes[15])}/>
+      </div>
+      <div id="fc3">
+        <GatsbyImage image={getImage(images.nodes[16])}/>
+      </div>
+    </div>
+
     <div className="project-gallery">
       <div className="row ">
         <div className="col-4">
@@ -49,7 +61,6 @@ export default function SanBenedetto({data: {images}}) {
         </div>
       </div>
     </div>
-
   </Layout>;
 }
 export const query = graphql`{
